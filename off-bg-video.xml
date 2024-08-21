@@ -1,0 +1,19 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+<view name="system">
+
+     <video name="backgroundvideo" extra="true">
+        <path>{random}</path>          
+        <visible>true</visible>	 	 
+        <rotation>0</rotation>  
+        <roundCorners>0.00</roundCorners>             
+        <color>FFFFFF</color>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="100" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="500" mode="Linear"/>
+			</storyboard>                        
+     </video>
+
+</view>
+</theme>

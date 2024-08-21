@@ -1,0 +1,76 @@
+<!--
+theme name:     Slanty RG40XXH
+creator:		Dwayne Hurst
+version         1
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+   <formatVersion>7</formatVersion>
+     
+   <include subset="Main Video Layout" name="Full Screen Slant">./videofull.xml</include>
+   <include subset="Main Video Layout" name="Full Screen Sweet">./videofull2.xml</include>
+   <include subset="Main Video Layout" name="Full Screen Toggle">./videofull3.xml</include>      
+   <include subset="Main Video Layout" name="Part Screen Slant">./videopart.xml</include>
+   <include subset="Main Video Layout" name="Part Screen Sweet">./videopart2.xml</include>
+   <include subset="Main Video Layout" name="Part Screen Toggle">./videopart3.xml</include>   
+   <include subset="Custom VIDEO" name="Video off">./off-bg-video.xml</include>
+   <include subset="Custom VIDEO" name="Video on">./on-bg-video.xml</include>
+   <include subset="Gamelist Font Size" name="Default">./gamelist-medium.xml</include> 
+   <include subset="Gamelist Font Size" name="Large">./gamelist-large.xml</include>
+   <include subset="Gamelist Font Size" name="Small">./gamelist-small.xml</include>        
+   
+<feature supported="carousel">
+   <view name="system">
+
+      <image name="background666" extra="true">
+         <origin>0 0</origin>
+         <path>./_inc/images/base.png</path>         
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <zIndex>1</zIndex>                               
+      </image> 
+
+      <text name="system-name" extra="true">
+         <origin>0 0</origin>
+         <pos>0.1 -0.15</pos>
+         <size>0.8 0.4</size>
+         <fontSize>0.038</fontSize>
+         <fontPath>./_inc/fonts/data-latin.ttf</fontPath>
+         <forceUppercase>true</forceUppercase>
+         <alignment>center</alignment>
+         <lineSpacing>1</lineSpacing>
+         <color>000000</color>
+         <glowColor>ffffff</glowColor>         
+         <text>${system.fullName}</text>
+         <zIndex>50</zIndex>
+			<storyboard>
+				<animation property="opacity" from="1" to="0" begin="2800" duration="350" mode="Linear"/>
+			</storyboard>          
+      </text>
+            
+   </view>
+</feature>
+
+   <view name="system">
+      <helpsystem name="help">
+         <pos>1.5 0</pos>      
+         <fontPath>./_inc/fonts/data-latin.ttf</fontPath>             
+         <textColor>101010</textColor>
+         <iconColor>101010</iconColor>
+      </helpsystem>
+   </view>  
+
+   <view name="detailed,video,basic,grid,gamecarousel">
+      <helpsystem name="help">
+         <pos>1.5 0</pos>       
+         <fontPath>./_inc/fonts/data-latin.ttf</fontPath>             
+         <textColor>101010</textColor>
+         <iconColor>101010</iconColor>
+      </helpsystem>
+   </view>  
+
+
+  
+</theme>
